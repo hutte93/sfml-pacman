@@ -1,0 +1,59 @@
+# depslib dependency file v1.0
+1509015327 source:/home/patrick/Projects/C++/Pacman2/main.cpp
+	<iostream>
+	"Game.h"
+
+1509012437 /home/patrick/Projects/C++/Pacman2/include/Spielfigur.h
+	<SFML/Graphics.hpp>
+	<memory>
+	<iostream>
+
+1509003139 /home/patrick/Projects/C++/Pacman2/include/Animation.h
+	<SFML/Graphics.hpp>
+
+1509003167 source:/home/patrick/Projects/C++/Pacman2/src/Animation.cpp
+	"Animation.h"
+
+1509015237 source:/home/patrick/Projects/C++/Pacman2/src/Spielfigur.cpp
+	"Spielfigur.h"
+
+1509006017 /home/patrick/Projects/C++/Pacman2/include/Game.h
+	<iostream>
+	<sstream>
+	<memory>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	"Gamestate.h"
+	"MainMenuState.h"
+	"PlayState.h"
+
+1509003647 /home/patrick/Projects/C++/Pacman2/include/Gamestate.h
+	<iostream>
+
+1509003568 /home/patrick/Projects/C++/Pacman2/include/MainMenuState.h
+	"Game.h"
+	<memory>
+	<SFML/Graphics.hpp>
+
+1509010193 source:/home/patrick/Projects/C++/Pacman2/src/Game.cpp
+	"Game.h"
+
+1509003585 source:/home/patrick/Projects/C++/Pacman2/src/MainMenuState.cpp
+	"MainMenuState.h"
+
+1509035639 source:/home/patrick/Projects/C++/Pacman2/src/PlayState.cpp
+	"PlayState.h"
+
+1509034128 /home/patrick/Projects/C++/Pacman2/include/PlayState.h
+	"Game.h"
+	"Gamestate.h"
+	"Spielfigur.h"
+	"Fresspunkt.h"
+
+1509034111 /home/patrick/Projects/C++/Pacman2/include/Fresspunkt.h
+	"Spielfigur.h"
+	<memory>
+
+1509034003 source:/home/patrick/Projects/C++/Pacman2/src/Fresspunkt.cpp
+	"Fresspunkt.h"
+

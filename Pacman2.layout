@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="src/PlayState.cpp" open="1" top="1" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4085" topLine="129" />
+		</Cursor>
+	</File>
+	<File name="src/MainMenuState.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="65" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/Fresspunkt.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="996" topLine="20" />
+		</Cursor>
+	</File>
+	<File name="include/MainMenuState.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include/PlayState.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="787" topLine="8" />
+		</Cursor>
+	</File>
+	<File name="src/Game.cpp" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="119" topLine="9" />
+		</Cursor>
+	</File>
+	<File name="include/Fresspunkt.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="473" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include/Game.h" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="215" topLine="8" />
+		</Cursor>
+	</File>
+	<File name="include/Gamestate.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="78" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/Spielfigur.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="146" topLine="78" />
+		</Cursor>
+		<Folding>
+			<Collapse line="23" />
+			<Collapse line="28" />
+			<Collapse line="33" />
+			<Collapse line="38" />
+		</Folding>
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="37" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include/Spielfigur.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="323" topLine="0" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>
