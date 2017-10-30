@@ -2,7 +2,7 @@
 
 PlayState::PlayState()
 {
-    pacman = std::make_shared<Spielfigur>(sf::Vector2f(40.f, 40.f), sf::Color::Yellow, sf::Vector2f(1280/2.f, 720/2.f), "img/pacman.png");
+    pacman = std::make_shared<Spielfigur>(sf::Vector2f(40.f, 40.f), sf::Color::Yellow, sf::Vector2f(1280/2.f, 720/2+15.f), "img/pacman.png");
 
     targets = 0;
     int nX = 40;
@@ -11,26 +11,42 @@ PlayState::PlayState()
     {
         for (int i = 0; i < 21; i++)
         {
-
-
             if (targets % 10 == 0)
             {
-                fresspunkt[i][j] = std::make_shared<Fresspunkt>(8.f, sf::Color::Yellow, sf::Vector2f(nX, nY), pacman);
+                fresspunkt[i][j] = std::make_shared<Fresspunkt>(6.5f, sf::Color::Yellow, sf::Vector2f(nX, nY), pacman);
                 fresspunkt[i][j]->setValue(50);
-            }
+             }
             else
             {
-                fresspunkt[i][j] = std::make_shared<Fresspunkt>(5.f, sf::Color::Yellow, sf::Vector2f(nX, nY), pacman);
+                fresspunkt[i][j] = std::make_shared<Fresspunkt>(5.f, sf::Color::White, sf::Vector2f(nX, nY), pacman);
             }
             targets++;
             nX += 60;
-
         }
         nY += 60;
         nX = 40;
     }
 
+    fresspunkt[10][5]->setValue(0);
+    targets--;
+
     font.loadFromFile("font/Ubuntu-B.ttf");
+
+    // ready screen
+    sf::Vector2f readySize(1280.f, 100.f);
+    ready.setSize(readySize);
+    ready.setOrigin(ready.getSize().x / 2, ready.getSize().y / 2);
+    ready.setPosition(1280/2.f, 200.f);
+    ready.setFillColor(sf::Color(66,66,66));
+
+    txtReady.setFont(font);
+    txtReady.setCharacterSize(50);
+    txtReady.setColor(sf::Color::Green);
+    txtReady.setString("Ready ?");
+    sf::FloatRect txtRect1 = txtReady.getGlobalBounds();
+    txtReady.setOrigin(txtRect1.left + txtRect1.width / 2.0f,
+                       txtRect1.top + txtRect1.height / 2.0f);
+    txtReady.setPosition(1280/2.f, 200.f);
 
     // background
     sf::Vector2f windowSize(1280.f, 720.f);
@@ -102,7 +118,7 @@ void PlayState::HandleEvents(Game &game)
 
             if (event.key.code == sf::Keyboard::Space)
             {
-                // init game
+                pacman->Init();
             }
         }
     }
@@ -155,8 +171,14 @@ void PlayState::Draw(Game &game)
     game.window.draw(txtScoreLabel);
     game.window.draw(txtScore);
 
+    if (pacman->getIsRunning() == false)
+    {
+        game.window.draw(ready);
+        game.window.draw(txtReady);
+    }
+
     if (targets == 0)
     {
-        game.ChangeState(Game::MAINMENU);
+        game.ChangeState(Game::END);
     }
 }

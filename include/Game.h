@@ -9,6 +9,7 @@
 #include "Gamestate.h"
 #include "MainMenuState.h"
 #include "PlayState.h"
+#include "EndState.h"
 
 class Game
 {
@@ -16,7 +17,7 @@ public:
     Game();
     ~Game();
 
-    enum gameStates {MAINMENU, PLAY};
+    enum gameStates {MAINMENU, PLAY, END};
 
     void Run();
     bool isRunning();

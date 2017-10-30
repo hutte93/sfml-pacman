@@ -24,6 +24,7 @@ class PlayState : public Gamestate
         std::shared_ptr<Fresspunkt> fresspunkt[21][11];
 
         sf::RectangleShape background;
+        sf::RectangleShape ready;
         sf::RectangleShape topBorder;
         sf::RectangleShape bottomBorder;
         sf::RectangleShape leftBorder;
@@ -32,6 +33,7 @@ class PlayState : public Gamestate
         sf::Font font;
         sf::Text txtScoreLabel;
         sf::Text txtScore;
+        sf::Text txtReady;
 
         int score;
         int targets;

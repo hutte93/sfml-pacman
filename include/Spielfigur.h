@@ -14,6 +14,8 @@ class Spielfigur : public sf::RectangleShape
 
         void Init();
         void Update(sf::RenderWindow &window, sf::Time elapsed);
+        bool getIsRunning();
+
         void setKeyUp(sf::Keyboard::Key k);
         void setKeyDown(sf::Keyboard::Key k);
         void setKeyLeft(sf::Keyboard::Key k);
@@ -31,6 +33,7 @@ class Spielfigur : public sf::RectangleShape
         sf::Time tempElapsedTime;
         sf::Texture texture;
 
+        bool isRunning;
         bool isAlive;
         int direction;
 

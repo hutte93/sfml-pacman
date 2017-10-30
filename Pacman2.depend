@@ -3,7 +3,7 @@
 	<iostream>
 	"Game.h"
 
-1509012437 /home/patrick/Projects/C++/Pacman2/include/Spielfigur.h
+1509377050 /home/patrick/Projects/C++/Pacman2/include/Spielfigur.h
 	<SFML/Graphics.hpp>
 	<memory>
 	<iostream>
@@ -14,10 +14,10 @@
 1509003167 source:/home/patrick/Projects/C++/Pacman2/src/Animation.cpp
 	"Animation.h"
 
-1509015237 source:/home/patrick/Projects/C++/Pacman2/src/Spielfigur.cpp
+1509377085 source:/home/patrick/Projects/C++/Pacman2/src/Spielfigur.cpp
 	"Spielfigur.h"
 
-1509006017 /home/patrick/Projects/C++/Pacman2/include/Game.h
+1509398193 /home/patrick/Projects/C++/Pacman2/include/Game.h
 	<iostream>
 	<sstream>
 	<memory>
@@ -26,6 +26,7 @@
 	"Gamestate.h"
 	"MainMenuState.h"
 	"PlayState.h"
+	"EndState.h"
 
 1509003647 /home/patrick/Projects/C++/Pacman2/include/Gamestate.h
 	<iostream>
@@ -35,16 +36,16 @@
 	<memory>
 	<SFML/Graphics.hpp>
 
-1509010193 source:/home/patrick/Projects/C++/Pacman2/src/Game.cpp
+1509398162 source:/home/patrick/Projects/C++/Pacman2/src/Game.cpp
 	"Game.h"
 
-1509003585 source:/home/patrick/Projects/C++/Pacman2/src/MainMenuState.cpp
+1509398779 source:/home/patrick/Projects/C++/Pacman2/src/MainMenuState.cpp
 	"MainMenuState.h"
 
-1509035639 source:/home/patrick/Projects/C++/Pacman2/src/PlayState.cpp
+1509398871 source:/home/patrick/Projects/C++/Pacman2/src/PlayState.cpp
 	"PlayState.h"
 
-1509034128 /home/patrick/Projects/C++/Pacman2/include/PlayState.h
+1509377320 /home/patrick/Projects/C++/Pacman2/include/PlayState.h
 	"Game.h"
 	"Gamestate.h"
 	"Spielfigur.h"
@@ -56,4 +57,73 @@
 
 1509034003 source:/home/patrick/Projects/C++/Pacman2/src/Fresspunkt.cpp
 	"Fresspunkt.h"
+
+1509398538 /home/patrick/Projects/C++/Pacman2/include/EndState.h
+	"Game.h"
+	<memory>
+	<SFML/Graphics.hpp>
+
+1509398954 source:/home/patrick/Projects/C++/Pacman2/src/EndState.cpp
+	"EndState.h"
+
+1509015327 source:/home/patrick/Git/main.cpp
+	<iostream>
+	"Game.h"
+
+1509398193 /home/patrick/Git/include/Game.h
+	<iostream>
+	<sstream>
+	<memory>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	"Gamestate.h"
+	"MainMenuState.h"
+	"PlayState.h"
+	"EndState.h"
+
+1509003647 /home/patrick/Git/include/Gamestate.h
+	<iostream>
+
+1509003568 /home/patrick/Git/include/MainMenuState.h
+	"Game.h"
+	<memory>
+	<SFML/Graphics.hpp>
+
+1509377320 /home/patrick/Git/include/PlayState.h
+	"Game.h"
+	"Gamestate.h"
+	"Spielfigur.h"
+	"Fresspunkt.h"
+
+1509377050 /home/patrick/Git/include/Spielfigur.h
+	<SFML/Graphics.hpp>
+	<memory>
+	<iostream>
+
+1509034111 /home/patrick/Git/include/Fresspunkt.h
+	"Spielfigur.h"
+	<memory>
+
+1509398538 /home/patrick/Git/include/EndState.h
+	"Game.h"
+	<memory>
+	<SFML/Graphics.hpp>
+
+1509398954 source:/home/patrick/Git/src/EndState.cpp
+	"EndState.h"
+
+1509034003 source:/home/patrick/Git/src/Fresspunkt.cpp
+	"Fresspunkt.h"
+
+1509398162 source:/home/patrick/Git/src/Game.cpp
+	"Game.h"
+
+1509399039 source:/home/patrick/Git/src/MainMenuState.cpp
+	"MainMenuState.h"
+
+1509398871 source:/home/patrick/Git/src/PlayState.cpp
+	"PlayState.h"
+
+1509377085 source:/home/patrick/Git/src/Spielfigur.cpp
+	"Spielfigur.h"
 

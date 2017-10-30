@@ -34,6 +34,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/EndState.h" />
 		<Unit filename="include/Fresspunkt.h" />
 		<Unit filename="include/Game.h" />
 		<Unit filename="include/Gamestate.h" />
@@ -41,6 +42,7 @@
 		<Unit filename="include/PlayState.h" />
 		<Unit filename="include/Spielfigur.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/EndState.cpp" />
 		<Unit filename="src/Fresspunkt.cpp" />
 		<Unit filename="src/Game.cpp" />
 		<Unit filename="src/MainMenuState.cpp" />

@@ -3,7 +3,7 @@
 Game::Game()
 {
     window.create(sf::VideoMode(1280, 720), "SFML Pacman!", sf::Style::Close);
-    //window.setFramerateLimit(60);
+
     running = true;
     hasFocus = true;
 }
@@ -50,6 +50,10 @@ void Game::ChangeState(gameStates newState)
 
         case PLAY:
             CurrentState = std::move(std::unique_ptr<PlayState>(new PlayState));
+            break;
+
+        case END:
+            CurrentState = std::move(std::unique_ptr<EndState>(new EndState));
             break;
     }
 }

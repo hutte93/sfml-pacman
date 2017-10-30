@@ -5,7 +5,7 @@ MainMenuState::MainMenuState()
     font.loadFromFile("font/Ubuntu-B.ttf");
 
     txtStartGame.setFont(font);
-    txtStartGame.setString("Starte die Maschine!");
+    txtStartGame.setString("Let me play!");
     txtStartGame.setCharacterSize(30);
     sf::FloatRect txtRect1 = txtStartGame.getGlobalBounds();
     txtStartGame.setOrigin(txtRect1.left + txtRect1.width / 2.0f,
@@ -13,7 +13,7 @@ MainMenuState::MainMenuState()
     txtStartGame.setPosition(1280 / 2, 720 / 2 - 50);
 
     txtQuitGame.setFont(font);
-    txtQuitGame.setString("Fahr' die Systeme runter!");
+    txtQuitGame.setString("That's enough!");
     txtQuitGame.setCharacterSize(30);
     sf::FloatRect txtRect2 = txtQuitGame.getGlobalBounds();
     txtQuitGame.setOrigin(txtRect2.left + txtRect2.width / 2.0f,
@@ -100,5 +100,5 @@ void MainMenuState::Draw(Game& game)
 
 MainMenuState::~MainMenuState()
 {
-    std::cout << "MainMenueState Destruktor wurde aufgerufen" << std::endl;
+    std::cout << "MainMenueState Destruktor aufgerufen." << std::endl;
 }
