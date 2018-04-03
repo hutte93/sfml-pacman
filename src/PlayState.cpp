@@ -41,7 +41,7 @@ PlayState::PlayState()
 
     txtReady.setFont(font);
     txtReady.setCharacterSize(50);
-    txtReady.setColor(sf::Color::Green);
+    txtReady.setFillColor(sf::Color::Green);
     txtReady.setString("Ready ?");
     sf::FloatRect txtRect1 = txtReady.getGlobalBounds();
     txtReady.setOrigin(txtRect1.left + txtRect1.width / 2.0f,
@@ -72,13 +72,13 @@ PlayState::PlayState()
     // texts
     txtScoreLabel.setFont(font);
     txtScoreLabel.setCharacterSize(25);
-    txtScoreLabel.setColor(sf::Color::Yellow);
+    txtScoreLabel.setFillColor(sf::Color::Yellow);
     txtScoreLabel.setString("Score: ");
     txtScoreLabel.setPosition(20.f, 3.f);
 
     txtScore.setFont(font);
     txtScore.setCharacterSize(25);
-    txtScoreLabel.setColor(sf::Color::Yellow);
+    txtScoreLabel.setFillColor(sf::Color::Yellow);
     txtScore.setString("0");
     txtScore.setPosition(100.f, 3.f);
 

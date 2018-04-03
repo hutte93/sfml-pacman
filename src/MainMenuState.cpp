@@ -60,34 +60,34 @@ void MainMenuState::Update(Game& game)
     if (txtStartGame.getGlobalBounds().contains(
         sf::Mouse::getPosition(game.window).x,
         sf::Mouse::getPosition(game.window).y) &&
-        txtStartGame.getColor() != sf::Color::Green)
+        txtStartGame.getFillColor() != sf::Color::Green)
     {
-        txtStartGame.setColor(sf::Color::Green);
+        txtStartGame.setFillColor(sf::Color::Green);
         bStartGameSelected = true;
     }
     else if (!txtStartGame.getGlobalBounds().contains(
         sf::Mouse::getPosition(game.window).x,
         sf::Mouse::getPosition(game.window).y) &&
-        txtStartGame.getColor() == sf::Color::Green)
+        txtStartGame.getFillColor() == sf::Color::Green)
     {
-        txtStartGame.setColor(sf::Color::White);
+        txtStartGame.setFillColor(sf::Color::White);
         bStartGameSelected = false;
     }
 
     if (txtQuitGame.getGlobalBounds().contains(
         sf::Mouse::getPosition(game.window).x,
         sf::Mouse::getPosition(game.window).y) &&
-        txtQuitGame.getColor() != sf::Color::Green)
+        txtQuitGame.getFillColor() != sf::Color::Green)
     {
-        txtQuitGame.setColor(sf::Color::Green);
+        txtQuitGame.setFillColor(sf::Color::Green);
         bQuitGameSelected = true;
     }
     else if (!txtQuitGame.getGlobalBounds().contains(
         sf::Mouse::getPosition(game.window).x,
         sf::Mouse::getPosition(game.window).y) &&
-        txtQuitGame.getColor() == sf::Color::Green)
+        txtQuitGame.getFillColor() == sf::Color::Green)
     {
-        txtQuitGame.setColor(sf::Color::White);
+        txtQuitGame.setFillColor(sf::Color::White);
         bQuitGameSelected = false;
     }
 }

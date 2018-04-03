@@ -59,34 +59,34 @@ void EndState::Update(Game& game)
     if (txtRestart.getGlobalBounds().contains(
         sf::Mouse::getPosition(game.window).x,
         sf::Mouse::getPosition(game.window).y) &&
-        txtRestart.getColor() != sf::Color::Green)
+        txtRestart.getFillColor() != sf::Color::Green)
     {
-        txtRestart.setColor(sf::Color::Green);
+        txtRestart.setFillColor(sf::Color::Green);
         bRestartGameSelected = true;
     }
     else if (!txtRestart.getGlobalBounds().contains(
         sf::Mouse::getPosition(game.window).x,
         sf::Mouse::getPosition(game.window).y) &&
-        txtRestart.getColor() == sf::Color::Green)
+        txtRestart.getFillColor() == sf::Color::Green)
     {
-        txtRestart.setColor(sf::Color::White);
+        txtRestart.setFillColor(sf::Color::White);
         bRestartGameSelected = false;
     }
 
     if (txtMainMenu.getGlobalBounds().contains(
         sf::Mouse::getPosition(game.window).x,
         sf::Mouse::getPosition(game.window).y) &&
-        txtMainMenu.getColor() != sf::Color::Green)
+        txtMainMenu.getFillColor() != sf::Color::Green)
     {
-        txtMainMenu.setColor(sf::Color::Green);
+        txtMainMenu.setFillColor(sf::Color::Green);
         bBackToMainMenuSelected = true;
     }
     else if (!txtMainMenu.getGlobalBounds().contains(
         sf::Mouse::getPosition(game.window).x,
         sf::Mouse::getPosition(game.window).y) &&
-        txtMainMenu.getColor() == sf::Color::Green)
+        txtMainMenu.getFillColor() == sf::Color::Green)
     {
-        txtMainMenu.setColor(sf::Color::White);
+        txtMainMenu.setFillColor(sf::Color::White);
         bBackToMainMenuSelected = false;
     }
 }
